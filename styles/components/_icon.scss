@@ -19,6 +19,8 @@
 
   &--yellow-arrow {
     &::after {
+      --size: #{rem(20)};
+
       background-image: url("../../assets/icons/arrow-top-right_yellow.svg");
     }
   }
