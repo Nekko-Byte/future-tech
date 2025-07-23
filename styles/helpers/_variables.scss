@@ -1,4 +1,5 @@
-@use "../helpers" as *;
+@use "./functions" as *;
+@use "./media" as *;
 
 :root {
   --color-light: #ffffff;
@@ -14,6 +15,8 @@
 
   --font-family-base: "Inter", sans-serif;
   --font-family-accent: "Kumbh Sans", sans-serif;
+
+  --border: #{rem(1)} solid var(--color-dark-15);
 
   --container-width: #{rem(1600)};
   --container-padding-x: #{rem(16)};

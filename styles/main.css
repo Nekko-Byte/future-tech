@@ -12,6 +12,7 @@
   --color-red: #ff5500;
   --font-family-base: "Inter", sans-serif;
   --font-family-accent: "Kumbh Sans", sans-serif;
+  --border: 0.0625rem solid var(--color-dark-15);
   --container-width: 100rem;
   --container-padding-x: 1rem;
   --transition-duration: 0.3s;
