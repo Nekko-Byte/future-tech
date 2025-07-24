@@ -437,7 +437,7 @@ button[aria-label]::before {
 }
 .icon--yellow-arrow::after {
   --size: 1.25rem;
-  background-image: url("../../assets/icons/arrow-top-right_yellow.svg");
+  background-image: url("../assets/icons/arrow-top-right_yellow.svg");
 }
 
 .logo {
