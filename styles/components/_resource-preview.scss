@@ -6,11 +6,25 @@
   justify-content: end;
   align-items: start;
   row-gap: rem(30);
+
+  @include laptop {
+    row-gap: rem(20);
+  }
 }
 
 .resource-preview {
   &__body {
     display: grid;
     row-gap: rem(14);
+
+    @include laptop {
+      row-gap: rem(6);
+    }
+  }
+
+  &__link {
+    @include mobile-s {
+      width: 100%;
+    }
   }
 }
