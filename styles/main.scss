@@ -20,8 +20,13 @@
 @use "./components/metrics";
 @use "./components/resource-preview";
 @use "./components/advantage-card";
+@use "./components/card";
+@use "./components/list";
+@use "./components/tag";
+@use "./components/tile";
 
 // Layout
 @use "./layout/header";
 @use "./layout/footer";
 @use "./layout/hero";
+@use "./layout/section";
