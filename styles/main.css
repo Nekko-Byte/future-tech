@@ -640,6 +640,7 @@ button[aria-label]::before {
 }
 .metrics__item {
   display: flex;
+  justify-content: start;
   flex-direction: column-reverse;
   row-gap: 0.625rem;
   padding: 3.125rem;
@@ -749,7 +750,7 @@ button[aria-label]::before {
   translate: 0 -50%;
   content: "";
   right: 0;
-  background: url("../../assets/icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
+  background: url("../assets/icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
   border-radius: 50%;
 }
 .advantage-card__details {
@@ -815,6 +816,11 @@ button[aria-label]::before {
 .card__grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(0.625rem, 0.306372549rem + 1.3071895425vw, 1.875rem);
+}
+@media (width <= 47.99875rem) {
+  .card__grid--2-cols {
+    grid-template-columns: 1fr;
+  }
 }
 .card__cell {
   display: flex;
@@ -1091,7 +1097,7 @@ button[aria-label]::before {
   grid-area: resource-preview;
   padding-left: 5rem;
   padding-bottom: 5rem;
-  background: url("../../assets/images/hero-bg.png") 0 0/cover no-repeat;
+  background: url("../assets/images/hero-bg.png") 0 0/cover no-repeat;
 }
 @media (width <= 90.06125rem) {
   .hero__resources-preview {
