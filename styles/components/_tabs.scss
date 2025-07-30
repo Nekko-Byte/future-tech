@@ -1,0 +1,44 @@
+@use "../helpers" as *;
+
+.tabs {
+  &__header {
+    border-bottom: var(--border);
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: rem(20);
+    padding-block: fluid(50, 20);
+
+    @include laptop {
+      column-gap: rem(14);
+    }
+  }
+
+  &__button {
+    padding: fluid(30, 18) rem(11);
+    border-radius: rem(8);
+
+    @include laptop {
+      font-size: rem(14);
+    }
+
+    &.is-active {
+      font-weight: 500;
+      color: var(--color-light);
+      background-color: var(--color-dark-10);
+      pointer-events: none;
+    }
+  }
+
+  &__content {
+    &:not(.is-active) {
+      display: none;
+    }
+
+    &:focus-visible {
+      outline-offset: -1rem;
+    }
+  }
+}
