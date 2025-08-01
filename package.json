@@ -1,24 +1,16 @@
 {
   "name": "future-tech",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "style": "sass --watch ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nekko-Byte/future-tech.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nekko-Byte/future-tech/issues"
-  },
-  "homepage": "https://github.com/Nekko-Byte/future-tech#readme",
   "devDependencies": {
-    "sass": "^1.89.2"
+    "sass": "^1.89.2",
+    "vite": "^7.0.4"
   },
   "dependencies": {
     "@a1rth/css-normalize": "^1.2.1"
