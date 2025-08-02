@@ -1,24 +1,34 @@
 {
   "name": "future-tech",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "style": "sass --watch ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint . --ext .js --fix",
+    "lint:css": "stylelint \"**/*.scss\" --fix",
+    "format": "prettier --write \"**/*.{js,html,scss}\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:format": "npm run lint && npm run format",
+    "ci:lint:js": "eslint . --ext .js",
+    "ci:lint:css": "stylelint \"**/*.scss\"",
+    "ci:format:check": "prettier --check \"**/*.{js,html,scss}\"",
+    "ci:validate": "npm run ci:lint:js && npm run ci:lint:css && npm run ci:format:check"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nekko-Byte/future-tech.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nekko-Byte/future-tech/issues"
-  },
-  "homepage": "https://github.com/Nekko-Byte/future-tech#readme",
   "devDependencies": {
-    "sass": "^1.89.2"
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "sass": "^1.89.2",
+    "stylelint": "^16.23.0",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "vite": "^7.0.4"
   },
   "dependencies": {
     "@a1rth/css-normalize": "^1.2.1"
