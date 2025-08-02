@@ -1,4 +1,4 @@
-@use "@helpers" as *;
+@use '@helpers' as *;
 
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
@@ -35,14 +35,14 @@
 
   &--top {
     &::before {
-      content: "";
+      content: '';
       bottom: 100%;
     }
   }
 
   &--bottom {
     &::after {
-      content: "";
+      content: '';
       top: 100%;
     }
   }

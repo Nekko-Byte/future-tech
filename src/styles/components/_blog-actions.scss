@@ -1,4 +1,4 @@
-@use "@helpers" as *;
+@use '@helpers' as *;
 
 .blog-actions {
   &__list {
@@ -44,7 +44,7 @@
     display: flex;
 
     @include laptop {
-      --size: #{rem(20)}
+      --size: #{rem(20)};
     }
 
     svg {

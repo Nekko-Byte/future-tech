@@ -1,8 +1,8 @@
-import "../styles/main.scss";
-import Header from "./components/Header.js";
-import TabsCollection from "./components/Tabs.js";
+import '../styles/main.scss'
+import Header from './components/Header.js'
+import TabsCollection from './components/Tabs.js'
 
-new Header();
-new TabsCollection();
+new Header()
+new TabsCollection()
 
-console.log("Hello World");
+console.log('Hello World')

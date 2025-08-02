@@ -1,4 +1,4 @@
-@use "@helpers" as *;
+@use '@helpers' as *;
 
 .advantage-card {
   display: grid;
@@ -23,32 +23,33 @@
   }
 
   &__link {
-    --circleSize: #{rem(52)};
-    --circleMarginLeft: #{rem(20)};
+    --circle-size: #{rem(52)};
+    --circle-margin-left: #{rem(20)};
 
     position: relative;
     display: grid;
     row-gap: rem(4);
-    padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+    padding-right: calc(var(--circle-size) + var(--circle-margin-left));
 
     @include laptop {
-      --circleSize: #{rem(44)};
-      --circleMarginLeft: #{rem(14)};
+      --circle-size: #{rem(44)};
+      --circle-margin-left: #{rem(14)};
 
       row-gap: rem(2);
     }
 
     @include mobile {
-      --circleSize: #{rem(40)};
+      --circle-size: #{rem(40)};
     }
 
     &::after {
       @include square(var(--circleSize));
       @include abs-y;
 
-      content: "";
+      content: '';
       right: 0;
-      background: url("/icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
+      background: url('/icons/arrow-top-right_black.svg') center no-repeat
+        var(--color-accent);
       border-radius: 50%;
     }
   }

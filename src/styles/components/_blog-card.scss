@@ -1,4 +1,4 @@
-@use "@helpers" as *;
+@use '@helpers' as *;
 
 .blog-card {
   display: grid;
@@ -10,8 +10,8 @@
   @include tablet {
     grid-template-columns: 1fr auto;
     grid-template-areas:
-    "author link"
-    "body body";
+      'author link'
+      'body body';
     row-gap: rem(30);
   }
 

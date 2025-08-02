@@ -1,4 +1,4 @@
-@use "@helpers" as *;
+@use '@helpers' as *;
 
 html {
   &.is-lock {
@@ -58,7 +58,7 @@ button {
       @include abs-center;
       @include square(rem(44));
 
-      content: "";
+      content: '';
     }
   }
 }
