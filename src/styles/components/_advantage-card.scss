@@ -43,7 +43,7 @@
     }
 
     &::after {
-      @include square(var(--circleSize));
+      @include square(var(--circle-size));
       @include abs-y;
 
       content: '';

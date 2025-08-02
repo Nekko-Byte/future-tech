@@ -1,0 +1,5 @@
+# Указываем Git автоматически преобразовывать CRLF в LF при коммите
+* text=auto eol=lf
+
+# Исключаем бинарные файлы (они не должны изменяться)
+*.{png,jpg,jpeg,gif,ico,svg,woff,woff2,ttf,eot} binary
