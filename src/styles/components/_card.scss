@@ -68,11 +68,13 @@
     }
 
     &--2-cols-alt {
-      grid-template-columns: auto 1fr;
-      gap: rem(30) rem(20);
-
       @include laptop {
         gap: rem(24) rem(16);
+      }
+
+      @include tablet-above {
+        grid-template-columns: auto 1fr;
+        gap: rem(30) rem(20);
       }
     }
   }
