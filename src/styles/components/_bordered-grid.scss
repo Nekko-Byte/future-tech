@@ -1,0 +1,43 @@
+@use '@helpers' as *;
+
+.bordered-grid {
+  --columns: 1;
+  --item-padding-y: #{fluid(80, 40)};
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  &--2-cols {
+    --columns: 2;
+  }
+
+  &--3-cols {
+    --columns: 3;
+    --item-padding-x: #{rem(50)};
+
+    @include laptop {
+      --item-padding-x: #{rem(40)};
+    }
+
+    .bordered-grid__item {
+      &:nth-child(3n -2),
+      &:nth-child(3n - 1) {
+        padding-right: var(--item-padding-x);
+        border-right: var(--border);
+      }
+
+      &:nth-child(3n - 1),
+      &:nth-child(3n) {
+        padding-left: var(--item-padding-x);
+      }
+
+      &:nth-child(3n - 1) {
+        @include full-vw-centered-line(bottom);
+      }
+    }
+  }
+
+  &__item {
+    padding-block: var(--item-padding-y);
+  }
+}

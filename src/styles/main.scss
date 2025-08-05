@@ -30,9 +30,12 @@
 @use './components/blog-card';
 @use './components/person-card';
 @use './components/download-info';
+@use './components/bordered-grid';
+@use './components/rating-view';
 
 // Layout
 @use './layout/header';
 @use './layout/footer';
 @use './layout/hero';
 @use './layout/section';
+@use './layout/review-card';
