@@ -32,6 +32,7 @@
 @use './components/download-info';
 @use './components/bordered-grid';
 @use './components/rating-view';
+@use './components/about-card';
 
 // Layout
 @use './layout/header';
@@ -39,3 +40,4 @@
 @use './layout/hero';
 @use './layout/section';
 @use './layout/review-card';
+@use './layout/about';
